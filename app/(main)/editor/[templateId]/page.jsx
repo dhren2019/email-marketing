@@ -9,6 +9,7 @@ import { useConvex } from 'convex/react'
 import { useParams } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
+
 function Editor() {
     const [viewHTMLCode, setViewHtmlCode] = useState();
     const { templateId } = useParams();

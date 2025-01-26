@@ -9,6 +9,8 @@ import { useMutation } from 'convex/react'
 import { api } from '@/convex/_generated/api'
 import { useParams } from 'next/navigation'
 import { toast } from 'sonner'
+import TestEmailPopup from '@/components/custom/TestEmailPopup';
+
 
 function EditorHeader({ viewHTMLCode }) {
     const { screenSize, setScreenSize } = useScreenSize();
@@ -45,7 +47,7 @@ function EditorHeader({ viewHTMLCode }) {
                 >
                     <Code />
                 </Button>
-                <Button variant="outline">Send Test Email</Button>
+                <TestEmailPopup />
                 <Button onClick={onSaveTemplate}>Save Template</Button>
 
             </div>
